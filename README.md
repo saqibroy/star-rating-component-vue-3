@@ -1,7 +1,12 @@
 # Star Rating Component (Vue 3)
 
-## Project Overview
-This is a reusable Star Rating component built in Vue 3 that allows users to rate artworks in three categories.
+A highly customizable star rating component for Vue 3, optimized for performance, SEO, and accessibility.
+
+## FOCUS
+- **Memoization**: Optimized computed properties for better performance.
+- **Lazy Loading**: Heavy resources are loaded lazily.
+- **SEO Optimized**: Uses semantic HTML tags.
+- **Accessibility**: ARIA attributes for better accessibility.
 
 ## Features
 - Click to set rating

@@ -15,21 +15,26 @@ const submitRatings = () => {
 </script>
 
 <template>
-  <div class="min-vh-100 pa4 bg-light-gray">
+  <section class="min-vh-100 pa4 bg-light-gray">
     <div class="mw6 center">
-      <h1 class="f3 fw5 tc mb4">Rate the Artwork</h1>
-      <StarRating
-        v-for="category in categories"
-        :key="category.id"
-        :category="category.name"
-        v-model:rating="category.rating"
-      />
-      <button
-        @click="submitRatings"
-        class="db w-100 mt3 ph3 pv2 white bg-dark-gray bn br2 pointer"
-      >
-        Submit
-      </button>
+      <header>
+        <h1 class="f3 fw5 tc mb4">Rate the Artwork</h1>
+      </header>
+      <main>
+        <StarRating
+          v-for="category in categories"
+          :key="category.id"
+          :category="category.name"
+          v-model:rating="category.rating"
+        />
+        <button
+          @click="submitRatings"
+          class="db w-100 mt3 ph3 pv2 white bg-dark-gray bn br2 pointer"
+          aria-label="Submit your ratings"
+        >
+          Submit
+        </button>
+      </main>
     </div>
-  </div>
+  </section>
 </template>

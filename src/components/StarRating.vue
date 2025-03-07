@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const props = defineProps({
   category: {
@@ -23,11 +23,13 @@ const setRating = (newRating) => {
 const setHoverRating = (newHoverRating) => {
   hoverRating.value = newHoverRating;
 };
+
+const computedRating = computed(() => hoverRating.value || props.rating);
 </script>
 
 <template>
-  <div class="mb4 pa3 bg-white br2 shadow-3">
-    <h3 class="f5 fw6 mb3 gray">{{ category }}</h3>
+  <article class="mb4 pa3 bg-white br2 shadow-3" aria-labelledby="category-title">
+    <h3 id="category-title" class="f5 fw6 mb3 gray">{{ category }}</h3>
     <div class="flex items-center">
       <button
         v-for="star in 5"
@@ -36,11 +38,12 @@ const setHoverRating = (newHoverRating) => {
         @mouseover="setHoverRating(star)"
         @mouseleave="setHoverRating(0)"
         class="f2 pa1 bg-transparent bn pointer"
-        :class="star <= (hoverRating || rating) ? 'gold' : 'light-gray'"
+        :class="star <= computedRating ? 'gold' : 'light-gray'"
+        aria-label="Rate {{ star }} stars"
       >
         ★
       </button>
       <span class="ml2 gray fw5">{{ rating }}/5</span>
     </div>
-  </div>
+  </article>
 </template>
