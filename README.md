@@ -12,7 +12,7 @@ This is a reusable Star Rating component built in Vue 3 that allows users to rat
 
 ## Approach & Decisions
 **1. Tech Stack:**
-- Built with **Vue 3** and **Vite** to align with LUMAS's frontend requirements.
+- Built with **Vue 3** and **Vite** to align with frontend requirements.
 - Used **Tachyons CSS** (offline version in `/assets`) for simplicity and zero build setup.
   - *Why Tachyons?* While Tailwind CSS is my go-to choice for professional projects, I opted for Tachyons here to avoid build tool conflicts and focus on core functionality. This saved time for bonus tasks.
 
