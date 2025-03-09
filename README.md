@@ -1,4 +1,6 @@
 # Star Rating Component (Vue 3)
+[![Vue](https://img.shields.io/badge/Vue-3.5.13-4FC08D?logo=vuedotjs)](https://vuejs.org)
+[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG_AA-ED6C47)](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 A highly customizable star rating component for Vue 3, optimized for performance, SEO, and accessibility.
 
@@ -51,7 +53,7 @@ A highly customizable star rating component for Vue 3, optimized for performance
 
 ### Project Structure
 ```plaintext
-sohail-lumas-task/
+/
 ├── src/
 │   ├── assets/
 │   │   └── tachyons.min.css
@@ -64,3 +66,26 @@ sohail-lumas-task/
 ├── vite.config.js
 └── README.md
 ```
+---
+
+## Contributing 🤝
+
+Contributions are welcome! Here's how to get started:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a pull request
+
+---
+
+## License 📄
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+Developed by [Saqib Sohail](mailto:sohail.cpp@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/saqibroy)  
+[![GitHub](https://img.shields.io/badge/GitHub-View-green?logo=github)](https://github.com/saqibroy)
