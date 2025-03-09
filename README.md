@@ -29,7 +29,7 @@ A highly customizable star rating component for Vue 3, optimized for performance
 - Skipped Tailwind CSS to eliminate PostCSS configuration complexities.
 - Used static Tachyons classes instead of dynamic styling for simplicity.
 
-**4. Bonus Tasks Completed:**
+**4. Tasks Completed:**
 - Added a **Submit button** that logs all ratings to the console.
 - Ensured mobile responsiveness using Tachyons’ utility classes (e.g., `mw6 center` for max-width).
 
